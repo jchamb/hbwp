@@ -1,0 +1,34 @@
+Vagrant::Config.run do |config|
+
+	config.vm.box = "webpagefxbase"
+	config.vm.box_url = "http://webpagefxdev.com/base.box"
+
+	config.vm.provision :puppet
+	config.vm.network :hostonly, "192.168.6.2"
+	config.vm.forward_port 80, 8888
+
+end
+
+
+
+Vagrant.configure("2") do |config|
+
+	def Kernel.is_windows?
+	    # Detect if we are running on Windows
+	    processor, platform, *rest = RUBY_PLATFORM.split("-")
+	    platform == 'mingw32'
+	end
+
+	config.vm.provider :virtualbox do |vb|
+		vb.customize ["modifyvm", :id, "--memory", 2048]
+	end
+
+	if Kernel.is_windows?
+		config.vm.synced_folder "./www", "/vagrant/www" #, type: "smb"
+		config.vm.synced_folder "./database", "/vagrant/database" #, type: "smb"
+	else
+		config.vm.synced_folder "./www", "/vagrant/www", type: "nfs"
+		config.vm.synced_folder "./database", "/vagrant/database", type: "nfs"
+	end
+
+end
