@@ -1,0 +1,10 @@
+<script type='text/javascript'>
+	window.onload=function(){
+		document.getElementById('phpmyadminlogin').submit();
+	};
+</script>
+
+<form id='phpmyadminlogin' action='http://localhost:8080/phpmyadmin/' method='post'>
+	<input type='hidden' name='pma_username' value='root'/>
+	<input type='hidden' name='pma_password' value=''/>
+</form>
