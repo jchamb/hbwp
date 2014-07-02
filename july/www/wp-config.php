@@ -15,6 +15,18 @@
  */
 
 
+
+/* Disabled wp file editor */
+define('DISALLOW_FILE_EDIT', true);
+
+
+define('APP_ROOT', __DIR__);
+define('WP_HOME', 'http://localhost:8080');
+
+define('WP_SITEURL', WP_HOME);
+define('WP_CONTENT_DIR', APP_ROOT.'/content');
+define('WP_CONTENT_URL', WP_HOME.'/content');
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'project');
@@ -37,14 +49,14 @@ define('DB_HOST', 'localhost');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         'h0b/BiPapMZo+z69bT]*$3gKDKC7#BN[G)xHOs-o*;SZ|+s#k@T3t*Us|E85-&TB');
+define('SECURE_AUTH_KEY',  'n&I?;b{NcwL>61b%P;^G4bfT17;$-]>Klk3:DHtsA0Y4ykDK(1A0pH#og3iPp;Ci');
+define('LOGGED_IN_KEY',    ',sA&*_Z>1E,JnBGfZf5yrT;hI:d_Ace+[$D ]6oh|l/J1[O%<M#E}|P&@yBvB5X|');
+define('NONCE_KEY',        'x^VG7gQ?j_gRI^3+~~XS5_FVHfE2F:a|BQ!C/mK&c&~_dj{G00eV|QSL88.m]Jn^');
+define('AUTH_SALT',        '_t~LQ]J#-&U{/PN pd6}G;yG_:|oz~Na]^1:o]I*+T0}(`44Kw^~_++rl#zq>itC');
+define('SECURE_AUTH_SALT', 'U=|7|d-`K2]%)yQ0[xN`D1)+Wp|`#kXQ#qk$WBdwcB0vGX3rmZsP+AKjSx_/U>T;');
+define('LOGGED_IN_SALT',   'GcKOr1p0^zMcjiwJlJ-7O2|a>us-yXssqVbG$:,?7[qO}tLVvU<|+V3=+KyY {U!');
+define('NONCE_SALT',       'ZI.A#*U<yM4oV;7YO_Zizui3=J#6^|i.5zT!eB]T/M]x~(k-(]B-?|E{bBB8I-6L');
 
 /**#@-*/
 
@@ -54,7 +66,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'iour_';
 
 /**
  * WordPress Localized Language, defaults to English.
