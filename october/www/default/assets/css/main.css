@@ -1,0 +1,394 @@
+* { box-sizing: border-box; }
+
+html, body { height: 100% }
+
+body {
+    background: #E1EDF3;
+    color: #4A4A4A;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+/*
+ | ------------------------------------------------------
+ |  Typography
+ | ------------------------------------------------------
+*/
+
+h1 {
+    font-size: 32px;
+    line-height: 52px;
+    margin-top: 52px;
+    margin-bottom: 26px;
+}
+h2 {
+    font-size: 25px;
+    line-height: 26px;
+    margin-top: 52px;
+    margin-bottom: 26px;
+}
+h3 {
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+h4 {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+p, ul, ol, pre, table, blockquote {
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+a { text-decoration: none; }
+
+/* Sanitation */
+hr {
+    border: 1px solid;
+    margin: -1px 0;
+}
+ul ul, ol ol, ul ol, ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+b, strong, em, small, code { line-height: 1; }
+
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+
+sub { top: 0.4em; }
+
+
+nav ul, nav ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+
+
+
+
+/*
+ | ------------------------------------------------------
+ |  Clearfix
+ | ------------------------------------------------------
+*/
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after { clear: both; }
+.cf       { *zoom: 1; }
+
+
+
+
+
+
+/*
+ | ------------------------------------------------------
+ |  Icons
+ | ------------------------------------------------------
+*/
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?-bx7ijp');
+    src:url('../fonts/icomoon.eot?#iefix-bx7ijp') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?-bx7ijp') format('woff'),
+        url('../fonts/icomoon.ttf?-bx7ijp') format('truetype'),
+        url('../fonts/icomoon.svg?-bx7ijp#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+    content: "\e600";
+}
+.icon-twitter:before {
+    content: "\e601";
+}
+.icon-rdio:before {
+    content: "\e602";
+}
+
+
+
+
+
+/*
+ | ------------------------------------------------------
+ |  Side Panel / Masthead
+ | ------------------------------------------------------
+*/
+
+.masthead {
+    background: #fff;
+    width: 200px;
+    height: 100%;
+    padding: 32px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+    .logo {
+        color: #3D8BB3;
+        font-size: 21px;
+    }
+
+    .navigation li { margin-bottom: 4px; }
+
+    .navigation a {
+        color: #4A4A4A;
+        font-size: 14px;
+    }
+        .navigation a:hover { color: #3D8BB3; }
+
+    .social {
+        list-style: none;
+        margin: inherit 0 0 0;
+        padding: 0;
+    }
+        .social a { color: #C8C8C8; }
+            .social a:hover { color: #4A4A4A; }
+
+
+/*
+ | ------------------------------------------------------
+ |  Wrapper Layout
+ | ------------------------------------------------------
+*/
+
+
+.outer-wrapper {
+    width: 100%;
+    height: 100%;
+    padding-left: 200px;
+    overflow: hidden;
+}
+.inner-wrapper {
+    width: 9999px;
+    height: calc(100% - 32px);
+    position: relative;
+}
+
+
+
+/*
+ | ------------------------------------------------------
+ |  Scroller
+ | ------------------------------------------------------
+*/
+
+.rail {
+    background: #D5E5EE;
+    height: 32px;
+    padding: 8px;
+}
+
+.handle {
+    background: #646161;
+    position: relative;
+    width: 215px;
+    height: 17px;
+    border-radius: 40px;
+}
+    .handle:before {
+        position: absolute;
+        top: 4px;
+        left: 50%;
+        margin-left: -3px;
+        height: 8px;
+        width: 5px;
+        border: 1px solid #979797;
+        border-top: 0;
+        border-bottom: 0;
+        content: '';
+    }
+
+    .handle:after {
+        position: absolute;
+        top: 4px;
+        left: 50%;
+        height: 8px;
+        width: 1px;
+        border-left: 1px solid #979797;
+        content: '';
+    }
+
+
+/*
+ | ------------------------------------------------------
+ |  Blocks
+ | ------------------------------------------------------
+*/
+
+.block {
+    width: 320px;
+    float: left;
+    position: absolute;
+}
+
+    .block h1 {
+        font-size: 32px;
+        line-height: 39px;
+        margin-top: 12px;
+    }
+
+.block--project {
+    height: 320px;
+    overflow: hidden;
+}
+
+.block--writing {
+    height: 480px;
+}
+
+.block--intro {
+    background: #3D8BB3;
+    color: #fff;
+    width: 640px;
+    height: 640px;
+    padding: 72px;
+}
+    .block--intro:before,
+    .block--intro:after {
+        border: 1px solid #4494bb;
+        content: '';
+        position: absolute;
+    }
+
+    .block--intro:before {
+        width: 100%;
+        height: 20px;
+        border-right: 0;
+        border-left: 0;
+        top: 147px;
+        left: 0;
+    }
+
+    .block--intro:after {
+        width: 20px;
+        height: 100%;
+        border-top: 0;
+        border-bottom: 0;
+        top: 0;
+        left: 73px;
+    }
+
+    .block--intro h1,
+    .block--intro h2 {
+        margin: 0;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 2;
+    }
+
+    .block--intro h1 { font-size: 36px; }
+    .block--intro h2 { font-weight: 400; }
+
+
+
+.project__img {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+
+    display: block;
+    width: 360px;
+    height: 360px;
+
+    transition: all 200ms ease-in-out;
+}
+
+.project__name {
+    background: rgba(61,139,179, .95);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 30px;
+    overflow: hidden;
+
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 300ms;
+
+    position: relative;
+    z-index: 5;
+}
+
+.block--project .project__name {
+    margin-top: 0;
+}
+
+    .block--project:hover .project__img {
+        width: 320px;
+        height: 320px;
+        top: 0;
+        left: 0;
+    }
+
+    .block--project:hover .project__name {
+        opacity: 1;
+    }
+
+.block--writing {
+    padding: 30px;
+}
+
+    .category {
+        color: #AEC5D0;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .block--writing:hover {
+        background: #3D8BB3;
+        color: #fff;
+    }
+
+
+.page__content,
+.page__image { float: left; }
+
+.page__content {
+    background: #3D8BB3;
+    padding: 72px;
+    color: #fff;
+    width: 640px;
+    min-height: 100%;
+}
+
+.page__image { margin: 0; padding: 0; }
