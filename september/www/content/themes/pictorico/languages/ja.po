@@ -1,0 +1,274 @@
+# Translation of Pictorico in Japanese
+# This file is distributed under the same license as the Pictorico package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-06-02 08:57:16+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Pictorico\n"
+
+msgid "https://wordpress.com/themes/"
+msgstr ""
+
+msgid "A single-column, grid-based portfolio theme with large featured images and a post slider, perfect for photoblogging or a portfolio site."
+msgstr ""
+
+#: inc/template-tags.php:55
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\"></span> %title"
+msgstr "<span class=\"meta-nav\"></span> %title"
+
+#: inc/template-tags.php:56
+msgctxt "Next post link"
+msgid "%title <span class=\"meta-nav\"></span>"
+msgstr "%title <span class=\"meta-nav\"></span>"
+
+#: inc/template-tags.php:111
+msgid "<span class=\"posted-on\">%1$s</span>"
+msgstr "<span class=\"posted-on\">%1$s</span>"
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "検索結果: %s"
+
+#: inc/template-tags.php:25
+msgid "<span class=\"meta-nav\"></span> Older posts"
+msgstr "<span class=\"meta-nav\"></span> 過去の投稿"
+
+#: inc/template-tags.php:29
+msgid "Newer posts <span class=\"meta-nav\"></span>"
+msgstr "新しい投稿 <span class=\"meta-nav\"></span>"
+
+#: inc/template-tags.php:52
+msgid "Post navigation"
+msgstr "投稿ナビゲーション"
+
+#: inc/template-tags.php:21
+msgid "Posts navigation"
+msgstr "投稿ナビゲーション"
+
+#: inc/extras.php:63
+msgid "Page %s"
+msgstr "ページ %s"
+
+#: header.php:32
+msgid "Skip to content"
+msgstr "コンテンツへ移動"
+
+#: functions.php:157
+msgctxt "Open Sans Condensed font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:166
+msgctxt "PT Serif font: on or off"
+msgid "on"
+msgstr "on"
+
+#: header.php:31
+msgid "Menu"
+msgstr "メニュー"
+
+#: functions.php:101
+msgid "Footer Sidebar 3"
+msgstr "フッターサイドバー 3"
+
+#: functions.php:110
+msgid "Footer Sidebar 4"
+msgstr "フッターサイドバー 4"
+
+#: functions.php:83
+msgid "Footer Sidebar 1"
+msgstr "フッターサイドバー 1"
+
+#: functions.php:92
+msgid "Footer Sidebar 2"
+msgstr "フッターサイドバー 2"
+
+#: functions.php:53
+msgid "Primary Menu"
+msgstr "メインメニュー"
+
+#: footer.php:19
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s by %2$s."
+
+#: footer.php:17
+msgid "Proudly powered by %s"
+msgstr "Proudly powered by %s"
+
+#: footer.php:17
+msgid "http://wordpress.org/"
+msgstr "http://ja.wordpress.org/"
+
+#: content.php:58
+msgid "% Comments"
+msgstr "%件のコメント"
+
+#: content.php:58
+msgid "1 Comment"
+msgstr "1件のコメント"
+
+#: content.php:58
+msgid "Leave a comment"
+msgstr "コメントする"
+
+#: content.php:52
+msgid "Tagged %1$s"
+msgstr "タグ:  %1$s"
+
+#: content.php:42
+msgid "Posted in %1$s"
+msgstr "カテゴリー: %1$s"
+
+#: content-single.php:65
+msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "カテゴリー: %1$s <a href=\"%3$s\" rel=\"bookmark\">パーマリンク</a>"
+
+#: content.php:24
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "続きを読む <span class=\"meta-nav\">&rarr;</span>"
+
+#: content-single.php:55
+msgid "This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "タグ: %2$s <a href=\"%3$s\" rel=\"bookmark\">パーマリンク</a>"
+
+#: content-single.php:57
+msgid "Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "<a href=\"%3$s\" rel=\"bookmark\">パーマリンク</a>をブックマーク"
+
+#: content-single.php:63
+msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "カテゴリー: %1$s タグ: %2$s <a href=\"%3$s\" rel=\"bookmark\">パーマリンク</a>"
+
+#: content-single.php:47 content-single.php:50 content.php:38 content.php:48
+msgid ", "
+msgstr ", "
+
+#: content-page.php:33 content-single.php:38 content.php:27
+msgid "Pages:"
+msgstr "ページ:"
+
+#: content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "お探しのコンテンツを見つけられませんでした。検索をお試しください。"
+
+#: content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "ご指定の検索条件に一致する投稿がありませんでした。他のキーワードでもう一度検索してみてください。"
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "最初の投稿をする準備ができましたか ?  <a href=\"%1$s\">ここからスタート</a>してください。"
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "見つかりません"
+
+#: content-home.php:28 content-single.php:30
+msgid "All %s posts"
+msgstr "すべての%s投稿"
+
+#: content-featured.php:36 content-home.php:39 content-page.php:38
+#: content-single.php:78 content.php:61
+msgid "Edit"
+msgstr "編集"
+
+#: comments.php:65
+msgid "Comments are closed."
+msgstr "コメントは受け付けていません。"
+
+#: comments.php:37 comments.php:55
+msgid "Newer Comments &rarr;"
+msgstr "新しいコメント &rarr;"
+
+#: comments.php:36 comments.php:54
+msgid "&larr; Older Comments"
+msgstr "&larr; 古いコメント"
+
+#: comments.php:35 comments.php:53
+msgid "Comment navigation"
+msgstr "コメントナビゲーション"
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "「%2$s」への%1$s件のフィードバック"
+
+#: archive.php:60
+msgid "Audios"
+msgstr "音声"
+
+#: archive.php:63
+msgid "Chats"
+msgstr "チャット"
+
+#: archive.php:66
+msgid "Archives"
+msgstr "アーカイブ"
+
+#: archive.php:57
+msgid "Statuses"
+msgstr "状態"
+
+#: archive.php:54
+msgid "Links"
+msgstr "リンク"
+
+#: archive.php:51
+msgid "Quotes"
+msgstr "引用"
+
+#: archive.php:48
+msgid "Videos"
+msgstr "動画"
+
+#: archive.php:45
+msgid "Images"
+msgstr "画像"
+
+#: archive.php:42
+msgid "Galleries"
+msgstr "ギャラリー"
+
+#: archive.php:39
+msgid "Asides"
+msgstr "アサイド"
+
+#: archive.php:36
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y年"
+
+#: archive.php:36
+msgid "Year: %s"
+msgstr "年別アーカイブ: %s"
+
+#: archive.php:33
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "Y年n月"
+
+#: archive.php:30
+msgid "Day: %s"
+msgstr "日別アーカイブ: %s"
+
+#: archive.php:33
+msgid "Month: %s"
+msgstr "月別アーカイブ: %s"
+
+#: archive.php:27
+msgid "Author: %s"
+msgstr "作成者: %s"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "こちらには何もありません。検索をお試しください。"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "お探しのページが見つかりません。"
