@@ -2,7 +2,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <div class="outer-wrapper cf">
-        <main class="page__content">
+        <main class="page__content page__content--full-width">
 
             <h1><?php the_title(); ?></h1>
             <?php the_content(); ?>

@@ -46,7 +46,10 @@ p, ul, ol, pre, table, blockquote {
     margin-bottom: 26px;
 }
 
-a { text-decoration: none; }
+a {
+    color: #fff;
+    text-decoration: none;
+}
 
 /* Sanitation */
 hr {
@@ -390,5 +393,25 @@ nav ul, nav ol {
     width: 640px;
     min-height: 100%;
 }
+    .page__content--full-width {
+        width: 100%;
+    }
 
 .page__image { margin: 0; padding: 0; }
+
+
+/* Archives */
+
+.type-post {
+    padding: 20px;
+}
+    .type-post:hover {
+        background: #fff;
+        color: #444;
+    }
+
+    .type-post h1 {
+        margin-bottom: 5px;
+    }
+
+    .type-post:hover a { color: #444; }
