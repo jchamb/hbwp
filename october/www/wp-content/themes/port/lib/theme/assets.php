@@ -38,5 +38,4 @@ function port_register_assets()
         ,false
         ,true // in footer
     );
-
 }

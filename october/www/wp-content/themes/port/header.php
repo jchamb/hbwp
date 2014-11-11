@@ -12,13 +12,13 @@
     <body>
         <header class="masthead" id="masthead">
             <h1 class="logo">Port.</h1>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">writing</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </nav>
+            <?php
+                wp_nav_menu(array(
+                    'container'        => 'nav'
+                    ,'container_class' => 'navigation'
+                    ,'theme_location'  => 'main_menu'
+                ));
+            ?>
             <ul class="social">
                 <li><a class="icon-github" href="#"></a></li>
                 <li><a class="icon-twitter" href="#"></a></li>

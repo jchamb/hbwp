@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: About
+*/
+
+get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <div class="outer-wrapper cf">
@@ -8,6 +13,9 @@
             <?php the_content(); ?>
 
         </main>
+        <figure class="page__image">
+            <?php the_post_thumbnail('full'); ?>
+        </figure>
     </div>
 
 <?php endwhile; endif; ?>
